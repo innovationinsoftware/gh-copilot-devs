@@ -17,3 +17,13 @@ def test_factorial_negative():
         factorial(-1)
     with pytest.raises(ValueError):
         factorial(-100)
+        def test_factorial_large_number():
+            assert factorial(20) == 2432902008176640000
+
+        def test_factorial_type_error():
+            with pytest.raises(TypeError):
+                factorial(3.5)
+            with pytest.raises(TypeError):
+                factorial("5")
+            with pytest.raises(TypeError):
+                factorial(None)
