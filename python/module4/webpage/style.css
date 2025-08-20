@@ -1,0 +1,8 @@
+/* Base button template */
+button {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
