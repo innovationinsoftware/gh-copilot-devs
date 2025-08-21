@@ -1,7 +1,4 @@
-def fibonacci_sequence(n):
-    seq = [0, 1]
-    for i in range(2, n):
-        seq.append(seq[i - 1] + seq[i - 2])
-    return seq
+def fibonacci(n):
+    return fibonacci(n - 1) + fibonacci(n - 2)
 
 print(fibonacci_sequence(15))
