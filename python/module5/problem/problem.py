@@ -1,12 +1,9 @@
 def remove_negatives(numbers):
-    def remove_negatives(numbers):
-        return [n for n in numbers if n >= 0]
-
-    data = [3, -1, 5, -2, 7]
-    print(remove_negatives(data))
+    for n in numbers:
         if n < 0:
             numbers.remove(n)
     return numbers
+
 
 data = [3, -1, 5, -2, 7]
 
