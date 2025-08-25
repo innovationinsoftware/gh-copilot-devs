@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "helloMcp": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["./server.mjs"]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "hello": {
+      "command": "node",
+      "args": ["server.js"],
+      "cwd": "${workspaceFolder}"
+    }
+  }
+}
