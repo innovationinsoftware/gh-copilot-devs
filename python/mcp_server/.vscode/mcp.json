@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "helloMcp2": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["${workspaceFolder}/server.py"]
+    }
+  }
+}
