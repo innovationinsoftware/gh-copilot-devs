@@ -26,6 +26,13 @@ class Car(Vehicle):
         return f"{self.brand} goes 'beep beep!'"
 
 class ElectricCar(Car):
+    """
+    Represents an electric car, inheriting from the Car class.
+    Attributes:
+        battery_capacity (int): The capacity of the car's battery in kWh.
+    Methods:
+        charge(): Returns a string indicating the car is charging with its battery capacity.
+    """
 
     def __init__(self, brand: str, year: int, doors: int, battery_capacity: int):
         super().__init__(brand, year, doors)
