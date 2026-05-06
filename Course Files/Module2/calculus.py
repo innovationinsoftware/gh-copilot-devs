@@ -1,1 +1,0 @@
-def calculus_summation(n):
