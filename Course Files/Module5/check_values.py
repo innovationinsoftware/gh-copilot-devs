@@ -1,0 +1,19 @@
+def factorial(n):
+    
+def check_value(x):
+    message = ""
+    magic_number = 10  
+    if (y := magic_number):  # the problem 
+        if x > y:
+            message = f"x is greater than {y}"
+        elif x < y:
+            message = f"x is less than {y}"
+        else:
+            message = f"x is equal to {y}"
+    else:
+        message = "Condition failed"
+    return message
+
+print(check_value(5))
+print(check_value(10))
+print(check_value(20))
