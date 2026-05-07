@@ -1,1 +1,0 @@
-def normalize_username(name):
