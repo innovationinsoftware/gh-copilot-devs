@@ -87,8 +87,6 @@ Design your prompt so that when it is run it:
 
 Make the prompt reinforce the secure coding rules from Task 2 — either by referencing the instruction file explicitly or by restating the key rules inside the prompt itself.
 
-Set the front-matter `mode` field appropriately for a template that collects input before generating output.
-
 **Verify it works:** Open the Copilot Chat prompt picker (`/`), run your prompt, and use it to scaffold the `create_account` endpoint. Confirm the output matches the pattern you specified.
 
 ---
