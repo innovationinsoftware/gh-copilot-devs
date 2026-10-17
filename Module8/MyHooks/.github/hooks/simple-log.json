@@ -1,0 +1,18 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "type": "command",
+        "command": "powershell -NoProfile -Command \"Add-Content -Path .copilot-hook.log -Value 'Copilot tool used'\""
+						},
+						{
+							"type": "command",
+							"command": ""
+						},
+						{
+							"type": "command",
+							"command": ""
+						}
+    ]
+  }
+}
