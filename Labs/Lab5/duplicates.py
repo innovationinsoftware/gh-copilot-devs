@@ -1,10 +1,7 @@
-
-from collections import Counter
-from typing import Hashable, Iterable, List, TypeVar
-
-T = TypeVar("T", bound=Hashable)
-
-
-def find_duplicates(items: Iterable[T]) -> List[T]:
-    counts = Counter(items)
-    return [item for item, count in counts.items() if count > 1]
+def find_duplicates(items):
+    duplicates = []
+    for i in range(len(items)):
+        for j in range(i + 1, len(items)):
+            if items[i] == items[j] and items[i] not in duplicates:
+                duplicates.append(items[i])
+    return duplicates

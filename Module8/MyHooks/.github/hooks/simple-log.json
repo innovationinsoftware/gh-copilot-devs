@@ -3,16 +3,8 @@
     "PostToolUse": [
       {
         "type": "command",
-        "command": "powershell -NoProfile -Command \"Add-Content -Path .copilot-hook.log -Value 'Copilot tool used'\""
-						},
-						{
-							"type": "command",
-							"command": ""
-						},
-						{
-							"type": "command",
-							"command": ""
-						}
+        "windows": "powershell -NoProfile -ExecutionPolicy Bypass -File .github\\hooks\\simple-log.ps1"
+      }
     ]
   }
 }

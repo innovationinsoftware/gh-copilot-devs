@@ -2,7 +2,7 @@
   "servers": {
     "helloMcp": {
       "type": "stdio",
-      "command": "python",
+      "command": "C:\\Python314\\python.exe",
       "args": ["${workspaceFolder}/server.py"]
     }
   }

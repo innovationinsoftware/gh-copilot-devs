@@ -8,8 +8,7 @@ def black_scholes_call(S, K, T, r, sigma):
 
         d1 = (math.log(S / K) + (r + 0.5 * sigma**2) * T) / (sigma * math.sqrt(T))
         d2 = d1 - sigma * math.sqrt(T)
-        call_price = S * norm.cdf(d1) - K * 
-        math.exp(-r * T) * norm.cdf(d2)
+        call_price = S * norm.cdf(d1) - K * math.exp(-r * T) * norm.cdf(d2)
         return round(call_price, 4)
     except Exception as e:
         print(f"Error calculating Black-Scholes price: {e}")
